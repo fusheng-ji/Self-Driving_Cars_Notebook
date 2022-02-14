@@ -10,125 +10,122 @@ Class link: [youtube](https://www.youtube.com/playlist?list=PL05umP7R6ij321zzKXK
 
 ## Contents
 
-[L1 Introduction](#l1-introduction)
+- [L1 Introduction](#l1-introduction)
+  - [1.1 Organization](#11-organization)
 
-[1.1 Organization](#11-organization)
+  - [1.2 Introduction](#12-introduction)
 
-[1.2 Introduction](#12-introduction)
+  - [1.3 History of Self-Driving](#13-history-of-self-driving)
 
-[1.3 History of Self-Driving](#13-history-of-self-driving)
+- [L2 Imitation Learning](#l2-lmitation-learning)
 
-[L2 Imitation Learning](#l2-lmitation-learning)
+  - [2.1 Approaches to Self-Driving](#21-approaches-to-self-driving)
 
-[2.1 Approaches to Self-Driving](#21-approaches-to-self-driving)
+  - [2.2 Deep Learning Recap](#22-deep-learning-recap)
 
-[2.2 Deep Learning Recap](#22-deep-learning-recap)
+  - [2.3 Imitation Learning](#23-limitation-leaning)
 
-[2.3 Imitation Learning](#23-limitation-leaning)
+  - [2.4 Conditional Imitation Learning](#24-conditional-limitation-learning)
 
-[2.4 Conditional Imitation Learning](#24-conditional-limitation-learning)
+- [L3 Direct Perception](#l3-direct-perception)
 
-[L3 Direct Perception](#l3-direct-perception)
+  - [3.1 Direct Perception](#31-direct-perception)
 
-[3.1 Direct Perception](#31-direct-perception)
+  - [3.2 Conditional Affordance Learning](#32-conditional-affordance-leaning)
 
-[3.2 Conditional Affordance Learning](#32-conditional-affordance-leaning)
+  - [3.3 Visual Abstractions](#33-visual-abstractions)
 
-[3.3 Visual Abstractions](#33-visual-abstractions)
+  - [3.4 Driving Policy Transfer](#34-dirving-policy-transfer)
 
-[3.4 Driving Policy Transfer](#34-dirving-policy-transfer)
+  - [3.5 Online vs. Offline Evaluation](#35-online-vs-offline-evaluation)
 
-[3.5 Online vs. Offline Evaluation](#35-online-vs-offline-evaluation)
+- [L4 Reinforcement Learning](#l4-reinforcement-learning)
 
-[L4 Reinforcement Learning](#l4-reinforcement-learning)
+  - [4.1 Markov Decision Processes](#41-markov-decision-processes)
 
-[4.1 Markov Decision Processes](#41-markov-decision-processes)
+  - [4.2 Bellman Optimality and Q-Learning](#42-bellman-optimality-and-q-learning)
 
-[4.2 Bellman Optimality and Q-Learning](#42-bellman-optimality-and-q-learning)
+  - [4.3 Deep Q-Learning](#43-deep-q-leaning)
 
-[4.3 Deep Q-Learning](#43-deep-q-leaning)
+- [L5 Vehicle Dynamics](#l5-vehicle-dynamics)
 
-[L5 Vehicle Dynamics](#l5-vehicle-dynamics)
+  - [5.1 Introduction](#51-introduction)
 
-[5.1 Introduction](#51-introduction)
+  - [5.2 Kinematic Bicycle Model](#52-kinematic-bicyle-model)
 
-[5.2 Kinematic Bicycle Model](#52-kinematic-bicyle-model)
+  - [5.3 Tire Models](#53-tire-models)
 
-[5.3 Tire Models](#53-tire-models)
+  - [5.4 Dynamic Bicycle Model](#54-dynamic-bicyle-model)
 
-[5.4 Dynamic Bicycle Model](#54-dynamic-bicyle-model)
+- [L6 Vehicle Control](#l6-vehicle-control)
 
-[L6 Vehicle Control](#l6-vehicle-control)
+  - [6.1 Introduction](#61-introduction)
 
-[6.1 Introduction](#61-introduction)
+  - [6.2 Black Box Control](#62-black-box-control)
 
-[6.2 Black Box Control](#62-black-box-control)
+  - [6.3 Geometric Control](#63-geometry-control)
 
-[6.3 Geometric Control](#63-geometry-control)
+  - [6.4 Optimal Control](#64-optimal-control)
 
-[6.4 Optimal Control](#64-optimal-control)
+- [L7 Odometry, SLAM and Localization](#l7-odometry-slam-and-localization)
 
-[L7 Odometry, SLAM and Localization](#l7-odometry-slam-and-localization)
+  - [7.1 Visual Odometry](#71-visual-odometry)
 
-[7.1 Visual Odometry](#71-visual-odometry)
+  - [7.2 Simultaneous Localization and Mapping](#72-simultaneous-localization-and-mapping)
 
-[7.2 Simultaneous Localization and Mapping](#72-simultaneous-localization-and-mapping)
+  - [7.3 Localization ](#73-localization)
 
-[7.3 Localization ](#73-localization)
+- [L8 Road and Lane Detection](#l8-road-and-lane-detection)
+  - [8.1 Introduction](#81-introduction)
 
-[L8 Road and Lane Detection](#l8-road-and-lane-detection)
+  - [8.2 Road Segmentation](#82-road-segmenation)
 
-[8.1 Introduction](#81-introduction)
+  - [8.3 Lane Marking Detection](#83-lane-marking-detection)
 
-[8.2 Road Segmentation](#82-road-segmenation)
+  - [8.4 Lane Detection](#84-lane-detection)
 
-[8.3 Lane Marking Detection](#83-lane-marking-detection)
+  - [8.5 Lane Tracking](#85-lane-tracking)
 
-[8.4 Lane Detection](#84-lane-detection)
+- [L9 Reconstruction and Motion](#l9-reconstruction-and-motion)
 
-[8.5 Lane Tracking](#85-lane-tracking)
+  - [9.1 Stereo Matching](#91-stereo-matching)
 
-[L9 Reconstruction and Motion](#l9-reconstruction-and-motion)
+  - [9.2 Freespace and Stixels](#92-freespace-and-stixels)
 
-[9.1 Stereo Matching](#91-stereo-matching)
+  - [9.3 Optical Flow](#93-optical-flow)
 
-[9.2 Freespace and Stixels](#92-freespace-and-stixels)
+  - [9.4 Scene Flow](#94-scene-flow)
 
-[9.3 Optical Flow](#93-optical-flow)
+- [L10 Object Detection](#l10-object-detection)
+  - [10.1 Introduction](#101-introduction)
 
-[9.4 Scene Flow](#94-scene-flow)
+  - [10.2 Performance Evaluation](#102-performance-evaluation)
 
-[L10 Object Detection](#l10-object-detection)
+  - [10.3 Sliding Window Object Detection](#103-sliding-window-object-detection)
 
-[10.1 Introduction](#101-introduction)
+  - [10.4 Region Based CNNs](#104-region-based-cnns)
 
-[10.2 Performance Evaluation](#102-performance-evaluation)
+  - [10.5 3D Object Detection](#105-3d-object-detection)
 
-[10.3 Sliding Window Object Detection](#103-sliding-window-object-detection)
+- [L11 Object Tracking](#l11-object-tracking)
 
-[10.4 Region Based CNNs](#104-region-based-cnns)
+  - [11.1 Introduction](#111-introduction)
 
-[10.5 3D Object Detection](#105-3d-object-detection)
+  - [11.2 Filtering](#112-filtering)
 
-[L11 Object Tracking](#l11-object-tracking)
+  - [11.3 Association](#113-association)
 
-[11.1 Introduction](#111-introduction)
+  - [11.4 Holistic Scene Understanding](#114-holistic-scene-understanding)
 
-[11.2 Filtering](#112-filtering)
+- [L12 Decision Making and Planning](#l12-decision-making-and-planning)
 
-[11.3 Association](#113-association)
+  - [12.1 Introduction](#121-introduction)
 
-[11.4 Holistic Scene Understanding](#114-holistic-scene-understanding)
+  - [12.2 Route Planning](#122-route-planning)
 
-[L12 Decision Making and Planning](#l12-decision-making-and-planning)
+  - [12.3 Behavior Planning](#123-behavior-panning)
 
-[12.1 Introduction](#121-introduction)
-
-[12.2 Route Planning](#122-route-planning)
-
-[12.3 Behavior Planning](#123-behavior-panning)
-
-[12.4 Motion Planning](#124-motion-planning)
+  - [12.4 Motion Planning](#124-motion-planning)
 
 ## L1 Introduction
 
