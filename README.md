@@ -8,132 +8,208 @@ Class link: [youtube](https://www.youtube.com/playlist?list=PL05umP7R6ij321zzKXK
 
 [Course Website](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/self-driving-cars/) with Slides, Lecture Notes, Problems and Solutions.
 
-## Contents
+![2022-03-14_22-44](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-44.png)
 
-- [L1 Introduction](#l1-introduction)
-  - [1.1 Organization](#11-organization)
-
-  - [1.2 Introduction](#12-introduction)
-
-  - [1.3 History of Self-Driving](#13-history-of-self-driving)
-
-- [L2 Imitation Learning](#l2-lmitation-learning)
-
-  - [2.1 Approaches to Self-Driving](#21-approaches-to-self-driving)
-
-  - [2.2 Deep Learning Recap](#22-deep-learning-recap)
-
-  - [2.3 Imitation Learning](#23-limitation-leaning)
-
-  - [2.4 Conditional Imitation Learning](#24-conditional-limitation-learning)
-
-- [L3 Direct Perception](#l3-direct-perception)
-
-  - [3.1 Direct Perception](#31-direct-perception)
-
-  - [3.2 Conditional Affordance Learning](#32-conditional-affordance-leaning)
-
-  - [3.3 Visual Abstractions](#33-visual-abstractions)
-
-  - [3.4 Driving Policy Transfer](#34-dirving-policy-transfer)
-
-  - [3.5 Online vs. Offline Evaluation](#35-online-vs-offline-evaluation)
-
-- [L4 Reinforcement Learning](#l4-reinforcement-learning)
-
-  - [4.1 Markov Decision Processes](#41-markov-decision-processes)
-
-  - [4.2 Bellman Optimality and Q-Learning](#42-bellman-optimality-and-q-learning)
-
-  - [4.3 Deep Q-Learning](#43-deep-q-leaning)
-
-- [L5 Vehicle Dynamics](#l5-vehicle-dynamics)
-
-  - [5.1 Introduction](#51-introduction)
-
-  - [5.2 Kinematic Bicycle Model](#52-kinematic-bicyle-model)
-
-  - [5.3 Tire Models](#53-tire-models)
-
-  - [5.4 Dynamic Bicycle Model](#54-dynamic-bicyle-model)
-
-- [L6 Vehicle Control](#l6-vehicle-control)
-
-  - [6.1 Introduction](#61-introduction)
-
-  - [6.2 Black Box Control](#62-black-box-control)
-
-  - [6.3 Geometric Control](#63-geometry-control)
-
-  - [6.4 Optimal Control](#64-optimal-control)
-
-- [L7 Odometry, SLAM and Localization](#l7-odometry-slam-and-localization)
-
-  - [7.1 Visual Odometry](#71-visual-odometry)
-
-  - [7.2 Simultaneous Localization and Mapping](#72-simultaneous-localization-and-mapping)
-
-  - [7.3 Localization ](#73-localization)
-
-- [L8 Road and Lane Detection](#l8-road-and-lane-detection)
-  - [8.1 Introduction](#81-introduction)
-
-  - [8.2 Road Segmentation](#82-road-segmenation)
-
-  - [8.3 Lane Marking Detection](#83-lane-marking-detection)
-
-  - [8.4 Lane Detection](#84-lane-detection)
-
-  - [8.5 Lane Tracking](#85-lane-tracking)
-
-- [L9 Reconstruction and Motion](#l9-reconstruction-and-motion)
-
-  - [9.1 Stereo Matching](#91-stereo-matching)
-
-  - [9.2 Freespace and Stixels](#92-freespace-and-stixels)
-
-  - [9.3 Optical Flow](#93-optical-flow)
-
-  - [9.4 Scene Flow](#94-scene-flow)
-
-- [L10 Object Detection](#l10-object-detection)
-  - [10.1 Introduction](#101-introduction)
-
-  - [10.2 Performance Evaluation](#102-performance-evaluation)
-
-  - [10.3 Sliding Window Object Detection](#103-sliding-window-object-detection)
-
-  - [10.4 Region Based CNNs](#104-region-based-cnns)
-
-  - [10.5 3D Object Detection](#105-3d-object-detection)
-
-- [L11 Object Tracking](#l11-object-tracking)
-
-  - [11.1 Introduction](#111-introduction)
-
-  - [11.2 Filtering](#112-filtering)
-
-  - [11.3 Association](#113-association)
-
-  - [11.4 Holistic Scene Understanding](#114-holistic-scene-understanding)
-
-- [L12 Decision Making and Planning](#l12-decision-making-and-planning)
-
-  - [12.1 Introduction](#121-introduction)
-
-  - [12.2 Route Planning](#122-route-planning)
-
-  - [12.3 Behavior Planning](#123-behavior-panning)
-
-  - [12.4 Motion Planning](#124-motion-planning)
+![2022-03-14_22-43](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-43.png)
 
 ## L1 Introduction
 
 ### 1.1 Organization
 
+![2022-03-14_22-45](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-45.png)
+
+![2022-03-14_22-46](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-46.png)
+
+![2022-03-14_22-46_1](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-46_1.png)
+
+**https://gym.openai.com/envs/CarRacing-v0/**
+
+![2022-03-14_22-46_2](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-46_2.png)
+
+![2022-03-14_22-47](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-47.png)
+
+![2022-03-14_22-47_1](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-47_1.png)
+
+![2022-03-14_22-47_2](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-47_2.png)
+
+![2022-03-14_22-47_3](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-47_3.png)
+
+#### Course Materials
+
+- Literature: (links to papers in footnote
+  - Janai et al.: Computer Vision for Autonomous Vehicles
+    https://arxiv.org/abs/1704.05519
+  - Szeliski: Computer Vision: Algorithms and Applications
+    https://szeliski.org/Book/
+  - Goodfellow, Bengio, Courville: Deep Learning
+    http://www.deeplearningbook.org
+- Talks, Courses and Tutorials:
+  - Stachniss (Bonn): Self-Driving Cars
+    https://www.ipb.uni-bonn.de/sdc-2020/
+  - Karpathy (Tesla): Tesla AI Day
+    https://www.youtube.com/watch?v=j0z4FweCy4M
+  - Fridman (MIT): Self-Driving Cars
+    https://deeplearning.mit.edu/
+  - Urtasun (UoT): All about SD
+    http://www.allaboutselfdriving.com/
+  - The Python Tutorial
+    https://docs.python.org/3/tutorial/
+  - NumPy Quickstart
+    https://numpy.org/devdocs/user/quickstart.html
+  - PyTorch Tutorial
+    https://pytorch.org/tutorials/
+  - Latex / Overleaf Tutorial
+    https://www.overleaf.com/learn
+
+#### Prerequisites
+
+- Basic math skills
+
+  - Linear algebra, probability and information theory. If unsure, have a look at:
+    Goodfellow et al.: [Deep Learning (Book)](https://www.deeplearningbook.org/), Chapters 1-4
+    Luxburg: [Mathematics for Machine Learning (Lecture)](http://www.tml.cs.uni-tuebingen.de/teaching/2020_maths_for_ml/index.php)
+    Deisenroth et al.: Mathematics for Machine Learning (Book)
+
+    ![2022-03-14_22-53](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-53.png)
+
+    ![2022-03-14_22-53_1](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-53_1.png)
+
+- Basic computer science skills
+
+  - Variables, functions, loops, classes, algorithms
+
+- Experience with deep learning. If unsure, take a deep learning course:
+
+  - Geiger: [Deep Learning (Lecture)](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/deep-learning/)
+  - Basic Python and PyTorch coding skills
+    https://docs.python.org/3/tutorial/
+    https://pytorch.org/tutorials/
+
 ### 1.2 Introduction
 
+#### Why Self-Driving Cars?
+
+![2022-03-14_22-56](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-56.png)
+
+![2022-03-14_22-56_1](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-56_1.png)
+
+![2022-03-14_22-56_2](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-56_2.png)
+
+![2022-03-14_22-56_3](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-56_3.png)
+
+![2022-03-14_22-56_4](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-56_4.png)
+
+![2022-03-14_22-56_5](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-56_5.png)
+
+![2022-03-14_22-57](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-57.png)
+
+![2022-03-14_22-57_1](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-57_1.png)
+
 ### 1.3 History of Self-Driving
+
+#### The Automobile
+
+![2022-03-14_22-58](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-58.png)
+
+![2022-03-14_22-58_1](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-58_1.png)
+
+![2022-03-14_22-58_2](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-58_2.png)
+
+#### Self-Driving Cars
+
+![2022-03-14_22-59](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-59.png)
+
+![2022-03-14_22-59_1](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-59_1.png)
+
+![2022-03-14_22-59_2](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_22-59_2.png)
+
+![2022-03-14_23-00](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-00.png)
+
+![2022-03-14_23-00_1](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-00_1.png)
+
+![2022-03-14_23-00_2](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-00_2.png)
+
+![2022-03-14_23-00_3](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-00_3.png)
+
+![2022-03-14_23-00_4](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-00_4.png)
+
+![2022-03-14_23-01](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-01.png)
+
+![2022-03-14_23-01_1](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-01_1.png)
+
+![2022-03-14_23-01_2](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-01_2.png)
+
+![2022-03-14_23-01_3](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-01_3.png)
+
+![2022-03-14_23-01_4](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-01_4.png)
+
+![2022-03-14_23-01_5](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-01_5.png)
+
+![2022-03-14_23-02](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-02.png)
+
+![2022-03-14_23-02_1](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-02_1.png)
+
+![2022-03-14_23-02_2](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-02_2.png)
+
+![2022-03-14_23-02_3](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-02_3.png)
+
+![2022-03-14_23-03](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-03.png)
+
+![2022-03-14_23-03_1](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-03_1.png)
+
+![2022-03-14_23-03_2](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-03_2.png)
+
+![2022-03-14_23-04](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-04.png)
+
+![2022-03-14_23-04_1](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-04_1.png)
+
+![2022-03-14_23-04_2](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-04_2.png)
+
+![2022-03-14_23-04_3](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-04_3.png)
+
+![2022-03-14_23-04_4](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-04_4.png)
+
+![2022-03-14_23-05](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-05.png)
+
+![2022-03-14_23-05_1](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-05_1.png)
+
+![2022-03-14_23-05_2](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-05_2.png)
+
+![2022-03-14_23-05_3](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-05_3.png)
+
+![2022-03-14_23-05_4](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-05_4.png)
+
+![2022-03-14_23-06](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-06.png)
+
+![2022-03-14_23-06_1](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-06_1.png)
+
+![2022-03-14_23-06_2](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-06_2.png)
+
+![2022-03-14_23-06_3](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-06_3.png)
+
+![2022-03-14_23-06_4](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-06_4.png)
+
+![2022-03-14_23-06_5](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-06_5.png)
+
+![2022-03-14_23-07](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-07.png)
+
+![2022-03-14_23-07_1](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-07_1.png)
+
+![2022-03-14_23-07_2](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-07_2.png)
+
+![2022-03-14_23-07_3](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-07_3.png)
+
+![2022-03-14_23-07_4](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-07_4.png)
+
+![2022-03-14_23-07_5](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-07_5.png)
+
+![2022-03-14_23-07_6](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-07_6.png)
+
+![2022-03-14_23-08](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-08.png)
+
+![2022-03-14_23-08_1](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-08_1.png)
+
+![2022-03-14_23-08_2](/home/wenboji/Self-Driving_Cars_Notebook/pic/2022-03-14_23-08_2.png)
 
 ## L2 Imitation Learning
 
